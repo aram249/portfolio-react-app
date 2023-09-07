@@ -1,0 +1,50 @@
+.card {
+    border-radius: 10px;
+    background: rgb(249, 249, 251);
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    width: 500px;
+    margin: 25px;
+    align-items: center;
+    display: flex;
+    /* flex: 1; */
+    margin: 0 1rem;
+    flex-flow: column;
+    margin-bottom: 24px;
+    padding: 50px;
+}
+
+.title, 
+.description,
+.header {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    @media (max-width: 768px) {
+        width: 90%;
+    }
+}
+
+.title {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.header {
+    font-size: 12px;
+}
+
+.description {
+    font-size: 12px;
+    text-align: left;
+    padding: 10px;
+}
+
+.about {
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.about > .card {
+    display: inline-table;
+}

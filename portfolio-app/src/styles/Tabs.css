@@ -2,7 +2,7 @@
     width: auto;
     height: auto;
     min-height: 400px;
-    background: #4f838f;
+    background: rgb(204, 204, 204);
     margin: 3.5 rem auto 1.5rem;
     padding: 2rem 1rem;
     /* rounded borders in tab */
@@ -13,37 +13,31 @@
 }
 
 ul.nav {
-    width: 60%;
-    margin: 0 auto 2rem;
+    display: block;
+    padding: px;
+    width: 25%;
+    /* margin: 0 auto 2rem; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #39A2DB;
+    /* border: 1px solid #39A2DB; */
     border-radius: 2rem;
-    padding-left: 0px;
+    padding-left: 50px;
     @media (max-width: 768px) {
         width: 90%;
     }
 }
 
 ul.nav li {
-    width: 50%;
-    padding: 1rem;
+    padding: 20px;
     list-style: none;
     text-align: center;
     cursor: pointer;
     transition: all 0.7s;
-    border-bottom-left-radius: 2rem;
-    border-top-left-radius: 2rem;
+    border-bottom: 4px solid #ddd;
 }
 
-/* ul.nav li:nth-child(2) {
-   border-radius: 0;
-   border-bottom-right-radius: 2rem;
-   border-top-right-radius: 2rem;
-} */
-
-ul.nav li:first-child {
+/* ul.nav li:first-child {
     border-radius: 0;
     border-bottom-left-radius: 2rem;
     border-top-left-radius: 2rem;
@@ -53,22 +47,14 @@ ul.nav li:last-child {
     border-radius: 0;
     border-bottom-right-radius: 2rem;
     border-top-right-radius: 2rem;
-}
+} */
 
 ul.nav li.hover {
     background: rgba(50, 224, 196, 0.15);
 }
 
 ul.nav li.active {
-    background: #39A2DB;
-}
-
-.tabContent {
-    font-size: 2rem;
-    text-align: center;
-}
-
-.FirstTab p, .SeconTab p {
-    font-size: 2rem;
-    text-align: center;
+    /* background-color: #007bff; */
+    color: white;  
+    transition: background-color 0.8s ease;
 }
