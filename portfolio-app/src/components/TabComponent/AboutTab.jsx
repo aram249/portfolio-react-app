@@ -1,26 +1,33 @@
 import React from 'react';
-import Card from '../Card.jsx'
-import '../../styles/Card.css'
-import CardData from '../CardData.jsx';
+import '../../styles/AboutTab.css'
+
 
 const AboutTab = (props) => {
     const aboutMe = props.aboutMe;
 
     return (
-        <div className='about'>
-            <div className='about-card'>        
-                {aboutMe.map((value, index) =>(
-                    <div className="card" key={index}>
-                            <h2 className='title'>
-                                {value.title}
-                            </h2>
-                            <p className='description'>
-                                {value.description}
-                            </p>
-                    </div>
-                ))}
+        <section className='about--section'>
+            <div className='about--section--content--box'>
+                <div className='about--section--content'>
+                    <p className='section--title'> Hey, I'm Aaron Christopher Ramirez</p>
+                    <h1 className='about--section--title'>
+                        <span className='about--section-title--color'>
+                            Software</span>{" "}
+                            <br/>
+                            Developer
+                    </h1>
+                    <p className='about--section-description'>
+                    I'm a Data Analyst currently working at Benefitfocus.
+                    <br/>
+                    I have a passion for software development.
+                    </p>
+                </div>
             </div>
-        </div>
+            <div className='about--section-img'>
+                <img src=".\image.jpg" alt="About Section"/>
+            </div>
+
+        </section>
     )
 }
 

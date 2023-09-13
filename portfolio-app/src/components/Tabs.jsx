@@ -63,7 +63,7 @@ const Tabs = () => {
         <div className="tabs">
             {/*Tab nav*/}
             <ul className="nav">
-                <TabNavItem title="About" id= "active" activeTab={activeTab} setActiveTab={setActiveTab}/>
+                <TabNavItem title="About" id= "about" activeTab={activeTab} setActiveTab={setActiveTab}/>
                 <TabNavItem title="Experience" id= "experience" activeTab={activeTab} setActiveTab={setActiveTab}/>
                 <TabNavItem title="Education" id= "education" activeTab={activeTab} setActiveTab={setActiveTab}/>
                 <TabNavItem title="Projects" id= "projects" activeTab={activeTab} setActiveTab={setActiveTab}/>
@@ -71,7 +71,7 @@ const Tabs = () => {
             </ul>
             <div className="outlet">
                 {/*Content will be shown here*/}
-                <TabContent id="active" activeTab={activeTab} >
+                <TabContent id="about" activeTab={activeTab} >
                     <AboutTab aboutMe = {aboutMe}/>
                 </TabContent>
 

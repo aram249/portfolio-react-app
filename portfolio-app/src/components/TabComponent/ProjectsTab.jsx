@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../../styles/Card.css'
 
 const ProjectsTab = (props) => {
     const projects = props.projects;

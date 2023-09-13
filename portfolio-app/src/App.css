@@ -1,43 +1,67 @@
-.App {
-  width: 100vw;
-  height: 100vh;
+/* Global CSS */
+
+body {
+  margin: 0;
+  font-family: "Roboto", "sans-serif";
+  -webkit-font-smoothing: "Roboto", "sans-serif";
+  -moz-osx-font-smoothing: "Roboto", "sans-serif";
+  font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+}
+
+:root {
+  --primary: #5e3bee;
+  --heading-color: #282938;
+  --bg-shade: #f5fcff;
+  --darkblue: #1c1e53;
+  --black: #000000;
+  --white: #ffffff;
+}
+
+/* Global CSS Ends */
+/* Main Headings */
+
+/* Heading 1 */
+h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 67px;
+}
+
+/* Heading 2 */
+h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+}
+
+/* Heading 3 */
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+/* Section Titles */
+/* Experience & About Me */
+.section--title {
+  color: var(--heading-color);
+  font-size: 21px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+  align-items: flex-start;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sub--title {
+  color: var(--heading-color);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: balck;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* Section Titles Ends */

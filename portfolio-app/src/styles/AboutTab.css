@@ -1,0 +1,60 @@
+:root {
+    --primary: #5e3bee;
+    --heading-color: #282938;
+    --bg-shade: #f5fcff;
+    --darkblue: #1c1e53;
+    --black: #000000;
+    --white: #ffffff;
+  }
+
+/* AboutMe Section */
+.about--section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 133.333px 85.333px 133.333px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    background-color: var(--bg-shade);
+}
+
+.about--section--content--box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.about--section--content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 21.333px;
+}
+
+.about--section--title {
+    color: var(--heading-color);
+    font-size: 74.667px;
+    font-weight: 700;
+    line-height: 90px;
+    align-self: stretch;
+}
+
+.about--section--title--color {
+    color: var(--primary);
+}
+
+.about--section-description {
+    color: var(--darkblue);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.hero--section--img {
+    display: flex;
+}
+
+.hero--section--img > img {
+    border-radius: 8px;
+}
