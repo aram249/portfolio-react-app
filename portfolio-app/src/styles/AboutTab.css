@@ -51,10 +51,11 @@
     line-height: 36px;
 }
 
-.hero--section--img {
+.about--section-img {
     display: flex;
 }
 
-.hero--section--img > img {
-    border-radius: 8px;
+.about--section-img > img {
+    width: 100%;
+    height: 100%;
 }
