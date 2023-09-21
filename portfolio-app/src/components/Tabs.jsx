@@ -30,15 +30,15 @@ const education = [
         school: "California State University, Long Beach",
         degree: "Bachelor of Science - BS",
         fieldOfStudy: "Computer Science",
-        startDate: "2019",
-        endDate: "2021"
+        startDate: "August 2019",
+        endDate: "May 2021"
     },
     {
         school: "College of the Canyons",
         degree: "Associate of Science - AS",
         fieldOfStudy: "Computer Science",
-        startDate: "2015",
-        endDate: "2019"
+        startDate: "August 2015",
+        endDate: "May 2019"
     }
 ];
 

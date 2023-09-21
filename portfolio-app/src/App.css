@@ -56,7 +56,7 @@ h3 {
   line-height: 32px;
   display: flex;
   align-items: flex-start;
-}
+} 
 
 .sub--title {
   color: var(--heading-color);
