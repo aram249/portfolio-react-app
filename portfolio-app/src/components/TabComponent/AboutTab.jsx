@@ -3,8 +3,6 @@ import '../../styles/AboutTab.css'
 
 
 const AboutTab = (props) => {
-    const aboutMe = props.aboutMe;
-
     return (
         <section className='about--section'>
             <div className='about--section--content--box'>

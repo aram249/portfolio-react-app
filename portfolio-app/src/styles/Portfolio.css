@@ -7,9 +7,33 @@
     --white: #ffffff;
   }
 
+  .sub--title {
+    color: var(--heading-color);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+
 .portfolio--section {
     display: flex;
     padding: 112px 85px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 80px;
+}
+
+.portfolio--container-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.portfolio--container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 21.px;
 }
 
 .portfolio--section--container {
@@ -17,16 +41,6 @@
     align-items: center;
     justify-content: center;
     gap: 42.6px;
-    width: 100%;
-
-}
-
-.portfolio--section--img {
-    border-radius: 8px;
-    width: 100%;
-}
-
-.portfolio--section--img > img {
     width: 100%;
 }
 
@@ -36,7 +50,7 @@
     align-items: flex-start;
     gap: 32px;
     flex: 1 0 0;
-    background: #fff;
+    background-color: rgb(255, 255, 255);
     box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
     cursor: pointer;
     border-top-left-radius: 12px;
@@ -65,4 +79,30 @@
     font-weight: 600;
 }
 
+.portfolio--section--card:hover path{
+    stroke: #006b6a;
+}
 
+.section--heading {
+    color: var(--heading-color);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 77px;
+  }
+
+/* Responsive  screen */
+@media only screen and (max-width: 1200px) {
+    .portfolio--section--container,
+    .portfolio--container-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio--container{
+        align-items: center;
+    }
+
+    .portfolio--container-box {
+        gap: 30px;
+      }
+}

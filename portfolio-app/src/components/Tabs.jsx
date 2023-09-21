@@ -66,7 +66,7 @@ const Tabs = () => {
                 <TabNavItem title="About" id= "about" activeTab={activeTab} setActiveTab={setActiveTab}/>
                 <TabNavItem title="Experience" id= "experience" activeTab={activeTab} setActiveTab={setActiveTab}/>
                 <TabNavItem title="Education" id= "education" activeTab={activeTab} setActiveTab={setActiveTab}/>
-                <TabNavItem title="Projects" id= "projects" activeTab={activeTab} setActiveTab={setActiveTab}/>
+                <TabNavItem title="Portfolio" id= "projects" activeTab={activeTab} setActiveTab={setActiveTab}/>
 
             </ul>
             <div className="outlet">
