@@ -7,14 +7,14 @@
     --white: #ffffff;
   }
 
-.sub--title {
+  .sub--title {
     color: var(--heading-color);
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
-}
+  }
 
-.education--section {
+.card--section {
     display: flex;
     padding: 112px 85px;
     flex-direction: column;
@@ -22,21 +22,7 @@
     gap: 80px;
 }
 
-.education--container-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.education--container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 21.px;
-}
-
-.education--section--container {
+.card--section--container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,21 +30,20 @@
     width: 100%;
 }
 
-.education--section--card{
+.card--section--card{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 32px;
     flex: 1 0 0;
-    background-color: rgb(255, 255, 255);
     box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
     cursor: pointer;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
 
-.education--section--card--content {
-    display: grid;
+.card--section--card--content {
+    display: flex;
     padding: 32px;
     flex-direction: column;
     align-items: center;
@@ -66,11 +51,11 @@
     align-self: stretch;
 }
 
-.education--section-title {
+.card--section-title {
     color: var(--heading-color);
 }
 
-.education--link{
+.card--link{
     text-decoration: none;
     display: flex;
     gap: 16px;
@@ -79,23 +64,30 @@
     font-weight: 600;
 }
 
-.education--section--card:hover path{
+.card--section--card:hover path{
     stroke: #006b6a;
 }
 
+.section--heading {
+    color: var(--heading-color);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 77px;
+  }
+
 /* Responsive  screen */
 @media only screen and (max-width: 1200px) {
-    .education--section--container,
-    .education--container-box {
+    .card--section--container,
+    .card--container-box {
         display: flex;
         flex-direction: column;
     }
 
-    .education--container{
+    .card--container{
         align-items: center;
     }
 
-    .education--container-box {
+    .card--container-box {
         gap: 30px;
       }
 }

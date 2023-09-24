@@ -6,21 +6,21 @@ const EducationTab = (props) => {
 
     console.log(education);
     return (
-        <section className='education--section' id='Education'>
-            <div className='education--section--container'>
+        <section className='card--section' id='Education'>
+            <div className='card--section--container'>
                 {education.map((value, index) =>(
-                    <div className="education--section--card" key={index}>
-                        <div className='education--section--card--content'>
+                    <div className="card--section--card" key={index}>
+                        <div className='card--section--card--content'>
                             <div>
-                                <h3 className='education--section-title'>
+                                <h3 className='card--section-title'>
                                     {value.school}
                                 </h3>
-                                <p className='text-md'>
+                                <h4 className='text-md'>
                                     {value.degree} in {value.fieldOfStudy}
-                                </p>
-                                <p className='text-md'>
+                                </h4>
+                                <h4 className='text-md'>
                                     {value.startDate} - {value.endDate}
-                                </p>
+                                </h4>
                             </div>
                         </div>
                     </div>
