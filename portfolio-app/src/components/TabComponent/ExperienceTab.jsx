@@ -2,13 +2,13 @@ import React from 'react';
 import '../../styles/Card.css'
 
 const ExperienceTab = (props) => {
-    const experience = props.experience;
+    const experience = props.props;
     console.log("line 6");
     console.log(experience);
 
 
     return (
-        <section className='card--section' id='MyPortfolio'>
+        <section className='card--section' id='Experience'>
             <div className='card--section--container'>     
                 {experience.map((value, index) =>(
                     <div className="card--section--card" key={index}>

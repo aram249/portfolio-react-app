@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import '../styles/Tabs.css';
-import TabNavItem from "./TabNavItem";
-import TabContent from "./TabContent";
 import AboutTab from "./TabComponent/AboutTab";
 import EducationTab from "./TabComponent/EducationTab";
 import ExperienceTab from "./TabComponent/ExperienceTab";
@@ -55,41 +53,45 @@ const projects = [
     }
 ];
 
-const Tabs = () => {
+const tabContent = [
+    {
+        title:"About",
+        content:<AboutTab props = {aboutMe}/>
+    },
+    {
+        title: "Experience",
+        content: <ExperienceTab props = {experience}/>
+    },
+    {
+        title: "Education",
+        content: <EducationTab props = {education}/>
+    },
+    {
+        title: "Portfolio",
+        content: <ProjectsTab props = {projects}/>
+    }
+]; 
+
+const TabComponent = () => {
+    // State to keep track of the currently active tab
+    const [activeTab, setActiveTab] = useState(0);
     
-    const [activeTab, setActiveTab] = useState("active");
-
-    return (
-        <div className="tabs">
-            {/*Tab nav*/}
-            <ul className="nav">
-                <TabNavItem title="About" id= "about" activeTab={activeTab} setActiveTab={setActiveTab}/>
-                <TabNavItem title="Experience" id= "experience" activeTab={activeTab} setActiveTab={setActiveTab}/>
-                <TabNavItem title="Education" id= "education" activeTab={activeTab} setActiveTab={setActiveTab}/>
-                <TabNavItem title="Portfolio" id= "projects" activeTab={activeTab} setActiveTab={setActiveTab}/>
-
-            </ul>
-            <div className="outlet">
-                {/*Content will be shown here*/}
-                <TabContent id="about" activeTab={activeTab} >
-                    <AboutTab aboutMe = {aboutMe}/>
-                </TabContent>
-
-                <TabContent id="experience" activeTab={activeTab}>
-                    <ExperienceTab experience={experience}/>
-                </TabContent>
-
-                <TabContent id="education" activeTab={activeTab}>
-                    <EducationTab education={education}/>
-                </TabContent>
-
-                <TabContent id="projects" activeTab={activeTab}>
-                    <ProjectsTab projects={projects}/>
-                </TabContent>
-                
-            </div>
+return(
+    <div className="tab--section">
+        <div className="tab--section--container">
+            {tabContent.map((value, index) => (
+                <li key={index}
+                onClick={() => setActiveTab(index)} 
+                className={activeTab === index ? 'active' : ''}> 
+                     {value.title} 
+                </li> 
+            ))}  
+        </div> 
+        <div className="tab-content">
+            {tabContent[activeTab].content}
         </div>
-    )
+    </div>
+    );
 };
 
-export default Tabs;
+export default TabComponent;

@@ -2,9 +2,11 @@ import React from 'react';
 import '../../styles/Card.css'
 
 const EducationTab = (props) => {
-    const education = props.education;
+    console.log("line 5");
+    console.log(props);
 
-    console.log(education);
+    const education = props.props;
+    
     return (
         <section className='card--section' id='Education'>
             <div className='card--section--container'>

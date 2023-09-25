@@ -1,11 +1,11 @@
 import React from 'react';
 import '../../styles/Card.css'
 
-const ProjectsTab = (props) => {
-    const projects = props.projects;
+const ProjectsTab = (portfolio) => {
+    const projects = portfolio.props;
 
     return (
-        <section className='card--section' id='MyPortfolio'>
+        <section className='card--section' id='Portfolio'>
             <div className='card--section--container'>     
                 {projects.map((value, index) =>(
                     <div className="card--section--card" key={index}>
