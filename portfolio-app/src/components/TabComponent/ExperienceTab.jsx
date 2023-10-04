@@ -3,9 +3,6 @@ import '../../styles/Card.css'
 
 const ExperienceTab = (props) => {
     const experience = props.props;
-    console.log("line 6");
-    console.log(experience);
-
 
     return (
         <section className='card--section' id='Experience'>
@@ -24,7 +21,13 @@ const ExperienceTab = (props) => {
                                     {value.startDate} - {value.endDate}
                                 </h4>
                                 <p className='text-md'>
-                                    {value.description}
+                                    {
+                                        value.description.map((val, index) =>(
+                                            <li className='text' key={index}>
+                                                {val}
+                                            </li>
+                                        ))
+                                    }
                                 </p>
                             </div>
                         </div>

@@ -4,6 +4,7 @@ import '../../styles/Card.css'
 const ProjectsTab = (portfolio) => {
     const projects = portfolio.props;
 
+
     return (
         <section className='card--section' id='Portfolio'>
             <div className='card--section--container'>     
@@ -15,11 +16,19 @@ const ProjectsTab = (portfolio) => {
                                     {value.projectName}
                                 </h3>
                                 <p className='text-md'>
-                                    {value.description}
+                                    {
+                                        value.description.map((value, index) =>(
+                                            <li className='text' key={index}>
+                                                {value}
+                                            </li>
+                                        ))
+                                    }
                                 </p>
                             </div>
-                            <p className='text-sm-card--link'>
-                            Github link
+                            <p className='text-sm-card--link' >
+                                <a href = {value.link}>
+                                {value.title}
+                                </a>
                             </p>
                         </div>
                     </div>
@@ -29,5 +38,7 @@ const ProjectsTab = (portfolio) => {
         
     )
 }
+
+
 
 export default ProjectsTab;

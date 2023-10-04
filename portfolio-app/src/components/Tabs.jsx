@@ -18,8 +18,7 @@ const experience = [
         company: "Benefitfocus",
         startDate: "2021",
         endDate: "Present",
-        description: "• Perform triage, conduct root cause analysis, and implement corrections for data issues identified during the validation process. • Ensured the accuracy of file transmission schedules, maintain file delivery logs, and reporting discrepancies to management. • Enhanced data collection procedures and implemented improvements across various internal departments and for our customers, resulting in optimized processes. Learned advanced functions in Microsoft Excel to effectively create pivot tables and generate comprehensive pivot reports. "
- 
+        description: ["Perform triage, conduct root cause analysis, and implement corrections for data issues identified during the validation process.", "Ensured the accuracy of file transmission schedules, maintain file delivery logs, and reporting discrepancies tomanagement.","Enhanced data collection procedures and implemented improvements across various internal departments and for our customers, resulting in optimized processes.", "Learned advanced functions in Microsoft Excel to effectively create pivot tables and generate comprehensive pivot reports"]
     }
 ];
 
@@ -43,13 +42,17 @@ const education = [
 const projects = [
     {
         projectName: "BeachCS",
-        description: "Architected and implemented an interactive web application that acts as a student’s educational guide containing relevant information regarding all aspects of the Computer Science/Computer Engineering field of study CSU Long Beach.",
-        skills: ""
+        description: ["Architecture and implemented a full-stack web application that acts as a student’s education guide containing all information regarding all Computer Engineering Computer Science for students at CSULB.", "Integrated the application with AWS EC2 to establish the back-end infrastructure, utilizing AWS RDS for executing queries.","Collaborated with a team by following Agile methodologies and scheduled daily meetings to discuss progress, user stories andissues."],
+        skills: "",
+        title: "View In Github",
+        link: "https://github.com/ShujoyI/CSULB_CECS_Wiki"
     },
     {
         projectName: "WaterQualityNetwork",
-        description: "Architected and implemented a network of IoT sensors to monitor water contamination in the city of Long Beach, and developed an interactive web application that acts as a hub for all the data contamination levels obtained by sensors.",
-        skills: ""
+        description: ["Architecture and implemented a full-stack web application architecture that performs data analysis on a Network of Wireless Sensors.", "Integrated the application with a GCP virtual machine, utilizing the Compute Engine API as the back-end server. This setup allows for querying data from the front-end framework.", "Integrate with TCP server-client architecture, enabling the retrieval of data measurements from sensors and transmitting them to the back-end server."],
+        skills: "",
+        title: "View In Github",
+        link: "https://github.com/aram249/WaterQualityNetwork"
     }
 ];
 
