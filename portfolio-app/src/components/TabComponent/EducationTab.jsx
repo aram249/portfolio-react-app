@@ -2,27 +2,35 @@ import React from 'react';
 import '../../styles/Card.css'
 
 const EducationTab = (props) => {
-    const education = props.education;
+    console.log("line 5");
+    console.log(props);
 
-    console.log(education);
+    const education = props.props;
+    
     return (
-        <div className='education'>
-            <>        
+        <section className='card--section' id='Education'>
+            <div className='card--section--container'>
                 {education.map((value, index) =>(
-                    <div className="card" key={index}>
-                            <h6 className='title'>
-                                {value.school}
-                            </h6>
-                            <h6 className='description'>
-                                {value.degree} in {value.fieldOfStudy}
-                            </h6>
-                            <h6 className='description'>
-                                {value.startDate} - {value.endDate}
-                            </h6>
+                    <div className="card--section--card" key={index}>
+                        <div className='card--section--card--content'>
+                            <div>
+                                <h3 className='card--section-title'>
+                                    {value.school}
+                                </h3>
+                                <h4 className='text-md'>
+                                    {value.degree} in {value.fieldOfStudy}
+                                </h4>
+                                <h4 className='text-md'>
+                                    {value.startDate} - {value.endDate}
+                                </h4>
+                            </div>
+                        </div>
                     </div>
                 ))}
-            </>
-        </div>
+            </div>
+        </section>
+
+        
     )
 }
 

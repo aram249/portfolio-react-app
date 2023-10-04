@@ -1,50 +1,95 @@
-.card {
-    border-radius: 10px;
-    background: rgb(249, 249, 251);
-    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
-    width: 500px;
-    margin: 25px;
-    align-items: center;
+:root {
+    --primary: #5e3bee;
+    --heading-color: #282938;
+    --bg-shade: #f5fcff;
+    --darkblue: #1c1e53;
+    --black: #000000;
+    --white: #ffffff;
+  }
+
+  .sub--title {
+    color: var(--heading-color);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+
+.card--section {
     display: flex;
-    /* flex: 1; */
-    margin: 0 1rem;
-    flex-flow: column;
-    margin-bottom: 24px;
-    padding: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 133.333px 85.333px 133.333px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 80px;
 }
 
-.title, 
-.description,
-.header {
-    text-align: center;
-    margin: 0;
-    padding: 10px;
-    @media (max-width: 768px) {
-        width: 90%;
+.card--section--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 42.6px;
+    width: 100%;
+}
+
+.card--section--card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    flex: 1 0 0;
+    background: #fff;
+    box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card--section--card--content {
+    display: flex;
+    padding: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+}
+
+.card--section-title {
+    color: var(--heading-color);
+}
+
+.card--link{
+    text-decoration: none;
+    display: flex;
+    gap: 16px;
+    border-bottom: 1.33px solid var(--primary);
+    padding-bottom: 10.6px;
+    font-weight: 600;
+}
+
+.card--section--card:hover path{
+    stroke: #006b6a;
+}
+
+.section--heading {
+    color: var(--heading-color);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 77px;
+  }
+
+/* Responsive  screen */
+@media only screen and (max-width: 1200px) {
+    .card--section--container,
+    .card--container-box {
+        display: flex;
+        flex-direction: column;
     }
-}
 
-.title {
-    font-weight: bold;
-    font-size: 14px;
-}
+    .card--container{
+        align-items: center;
+    }
 
-.header {
-    font-size: 12px;
-}
-
-.description {
-    font-size: 12px;
-    text-align: left;
-    padding: 10px;
-}
-
-.about {
-    width: 80%;
-    text-align: center;
-    margin-left: 10%;
-}
-
-.about > .card {
-    display: inline-table;
+    .card--container-box {
+        gap: 30px;
+      }
 }

@@ -1,16 +1,16 @@
-.tabs {
+.tab--section {
     margin: 0;
     max-width: auto;
     width: 100%;
 }
 
-.tabs .nav {
+.tab--section--container {
     display: flex;
     flex-wrap: wrap;
     border-bottom: 1px solid #bbb;
 }
 
-.tabs .nav ul {
+.tab--section--container ul {
     content: "";
     position: absolute;
     bottom: 10px;
@@ -21,7 +21,7 @@
     border-radius: 10px;
 }
 
-.tabs .nav li  {
+.tab--section--container li  {
     position: relative;
     padding: 0px 20px;
     height: 60px;
